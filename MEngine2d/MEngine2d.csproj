@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PixelCrawler\Heroes\Knight\Idle\Idle-Sheet.png" />
+    <None Remove="PixelCrawler\Heroes\Knight\Idle\Idle.aseprite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="PixelCrawler\Heroes\Knight\Idle\Idle-Sheet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PixelCrawler\Heroes\Knight\Idle\Idle.aseprite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WriteableBitmapEx" Version="1.6.8" />
+  </ItemGroup>
+
+</Project>
